@@ -1,5 +1,5 @@
-function moveForward (cm: number, calibrate: number) {
-    sec = cm / calibrate
+function moveForward (_in: number, calibrate: number) {
+    sec = _in / calibrate
     basic.pause(1000)
     TPBot.setTravelTime(TPBot.DriveDirection.Forward, 25, sec)
     basic.pause(1000)
@@ -41,4 +41,4 @@ CalibrateTurnLeft = 0.3
 // The default is 0.31
 CalibrateTurnRight = 0.31
 // The default is 19
-calibrateMoveForward = 19
+calibrateMoveForward = 7.5
